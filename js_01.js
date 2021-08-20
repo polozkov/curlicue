@@ -1,8 +1,8 @@
 //Я на Гитхабе https://github.com/polozkov
-//настройки прорисовки фрактала Курликю
+//Код фрактала: https://github.com/polozkov/curlicue
 DRAWING_SETS = {
     //сколько отрезков будет в ломаной линии?
-    n_segments: 10000,
+    n_segments: 5000,
 
     //на сколько увеличивать угол прироста за один кадр
     step_animate: 1e9,
