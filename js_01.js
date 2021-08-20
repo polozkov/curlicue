@@ -1,5 +1,6 @@
-//Я на Гитхабе https://github.com/polozkov
+//Я на Гитхабе: https://github.com/polozkov
 //Код фрактала: https://github.com/polozkov/curlicue
+//Анимация: https://jsfiddle.net/Polozkov/sg6wa2nk/11/
 DRAWING_SETS = {
     //сколько отрезков будет в ломаной линии?
     n_segments: 5000,
@@ -12,7 +13,6 @@ DRAWING_SETS = {
 
     //начальный угол "S"
     angle_start: 0.0,
-
 
     //сколько десятичных знаков будет точность отрисовки лиманой линии
     n_digits: 1,
@@ -198,4 +198,3 @@ window.f_my_request_animation_frame = (function () {
         window.f_my_request_animation_frame(f_animation_loop);
     }());
 }());
-
