@@ -6,3 +6,8 @@ https://polozkov.github.io/curlicue/
 
 Код здесь:
 https://github.com/polozkov/curlicue
+
+//Анимация:
+https://jsfiddle.net/Polozkov/sg6wa2nk/11/
+
+
