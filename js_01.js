@@ -172,20 +172,10 @@ window.f_my_request_animation_frame = (function () {
         };
 })();
 
-//сохраним начальный угол смещения для фрактала Курликю
-var START_ANGLE_DELTA = DRAWING_SETS.angle_delta;
-//будем делать анимацию пошагово на каждый кадр
-var n_step = 0;
-
 //IIFE (Immediately Invoked Function Expression)
 (function f_animation_loop() {
-    //работаем по кадрово: +1 шаг для изменения приращения поворота
-    n_step++;
-    //на сколько текущий угол больше начального?
-    var n_step_angle_plus = n_step / DRAWING_SETS.step_animate;
-
     //к стартовому углу прибавим небольшое приращение для каждого шага
-    DRAWING_SETS.angle_delta = START_ANGLE_DELTA + n_step_angle_plus;
+    DRAWING_SETS.angle_delta += (1 / DRAWING_SETS.step_animate);
 
     //перерисуем ломаную линию с новым  настройками
     CALCULATE.f_set_polyline_by_drawing_set(DRAWING_SETS);
