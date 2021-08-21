@@ -178,15 +178,13 @@ window.f_my_request_animation_frame = (function () {
     var START_ANGLE_DELTA = DRAWING_SETS.angle_delta;
     //будем делать анимацию пошагово на каждый кадр
     var n_step = 0;
-    //на сколько текущий угол больше начального на данном шаге
-    var n_step_angle_plus = 0;
 
     //IIFE (Immediately Invoked Function Expression)
     (function f_animation_loop() {
         //работаем по кадрово: +1 шаг для изменения приращения поворота
         n_step++;
         //на сколько текущий угол больше начального?
-        n_step_angle_plus = n_step / DRAWING_SETS.step_animate;
+        var n_step_angle_plus = n_step / DRAWING_SETS.step_animate;
 
         //к стартовому углу прибавим небольшое приращение для каждого шага
         DRAWING_SETS.angle_delta = START_ANGLE_DELTA + n_step_angle_plus;
